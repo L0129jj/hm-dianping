@@ -6,13 +6,13 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/hm-dianping?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8
-    username: root
-    password: 88687729
+    username: ${username}
+    password: ${password}
   data:
     redis:
       host: 127.0.0.1
       port: 6379
-      password: 88687729
+      password: ${password}
       lettuce:
         pool:
           max-active: 10
